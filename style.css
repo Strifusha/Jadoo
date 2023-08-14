@@ -1,0 +1,100 @@
+body{
+    padding:  20px 130px;
+}
+
+#pink-shade{
+    position: absolute;
+    left: 0;
+    z-index: auto;
+}
+
+#beige-right-corner{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: auto;
+}
+
+#left-plane{
+    position: absolute;
+    top: 180px;
+    left: 45%;
+    z-index: 1; 
+}
+
+#right-plane{
+    position: absolute;
+    right: 7%;
+    top: 210px;
+    z-index: 1;
+}
+
+#girl{
+    position: absolute;
+    right: 10%;
+    z-index: 2; 
+}
+
+#logo{
+    width: 115px;
+    height: 34px;
+    margin-right: 227px;
+}
+
+#header-nav{
+    display: flex;
+    align-items: center;
+}
+
+#header-li {
+    display: flex;
+    font-size: 16px;
+    z-index: 1;
+}
+
+#sing-up{
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 9px 21px;
+    margin: 0 62px;
+    z-index: 1;
+    background-color: #fff1da;
+   
+}
+
+#select-language{
+    z-index: 1;
+    border: none;
+    background-color: #fff1da;
+}
+
+#slogan{
+    margin: 135px 0;
+    width: 500px;
+    min-width: 400px;
+}
+
+#highest-heading{
+    text-transform: uppercase;
+    color: #ff0000;
+}
+
+#main-heading{
+    margin: 10px 0;
+    font-size: 80px;
+}
+
+p{
+    font-size: 16px;
+    line-height: 2;
+}
+
+#more-info{
+    margin: 35px 45px 0 0;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    background-color:#F1A501;
+    color: #fff;
+}
