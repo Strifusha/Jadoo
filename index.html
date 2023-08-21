@@ -7,89 +7,217 @@
     <title>Jadoo</title>
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@600&family=Poppins:wght@400;500;600;700&family=Volkhov:wght@700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <div class="header-bg">
+    <div class="header-bg container">
+        
         <header class="container">
-            <nav>
-                <img src="./images/Logo.png" alt="Jadoo">
+            <nav class="top-navigation">
+                <img src="./images/Logo.png" class="jadoo" alt="Jadoo">
                 <ul>
-                    <li>Desitnations</li>
+                    <li>Destinations</li>
                     <li>Hotels</li>
                     <li>Flights</li>
                     <li>Bookings</li>
                     <li>Login</li>
                 </ul>
-                <button id="sing-up">Sing up</button>
-                <select id="select-language">
+
+                <button class="sing-up">Sing up</button>
+                <select class="select-language">
                     <option>EN</option>
                     <option>UA</option>
                 </select>
+
             </nav>
         </header>
 
-        <section class="container">
-            <div id="slogan">
-                <h4>Best Destinations <p>Built Wicket longer admire do bar</p> around the world</h4>
-                <h1 id="main-heading">Travel, enjoy and live a new and full life</h1>
+        <section class="container top-container">
+            <div class="slogan">
+                <h4 class="top-heading">Best Destinations around the world</h4>
+                <h1 class="main-heading">Travel, enjoy and live a new and full life</h1>
+                <p class="heading-description" >Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.</p>
+                <div class='slogan-buttons'>
+                    <button class="find-more-btn">Find out more</button>
+                    <button class="play-demo"><img class='demo-img' src="./images/icons/Play-demo.png" /> Play Demo</button>
+                </div>
                 
-                <button>Find out more</button>
-                <button><img src="./rectangle.png" /> Demo</button>
             </div>
-            <div>
-                <img src="./images/Traveller.png" alt="Traveller">
-                <img src="./images/plane.png" alt="plane"><img src="./images/plane.png" alt="one more plane">
+            <div class='traveller'>
+                <img  src="./images/Traveller.png" alt="Traveller">
             </div>
         </section>
+
     </div>
-        <main class="container">
+
+    <main class="container">
             <section id="services">
-                <p>Category</p>
-              
+                <p class="category">Category</p>
+                <h2>We Offer Best Services</h2>
+
+                <div id="service-icons">
+                    <div>
+                        <img src="./images/icons/satellite-dish.png" alt="Weather">
+                        <h5>Calculated Weather </h5>
+                        <p class="service-description">Built Wicket longer admire do barton vanity itself do in it.</p>
+                    </div>
+    
+                    <div>
+                        <img src="./images/icons/small-plane.png" alt="Flights">
+                        <h5>Best Flights</h5>
+                        <p class="service-description">Engrossed listening. Park gate sell they west hard for the.</p>
+                    </div>
+    
+                    <div>
+                        <img src="./images/icons/microphone.png" alt="Events">
+                        <h5>Local Events</h5>
+                        <p class="service-description">Barton vanity itself do in it. Preferd to men it engrossed listening. </p>
+                    </div>
+    
+                    <div>
+                    <img src="./images/icons/settings-sign.png" alt="Customization">
+                    <h5>Customization</h5>
+                    <p class="service-description">We deliver outsourced aviation services for military customers</p>
+                    </div>
+                </div>
             </section>
 
             <section id="destinations">
-                <p>Top Selling</p>
+                <p class="top-selling">Top Selling</p>
                 <h2>Top Destinations</h2>
-                <div>
-                    <img src="./images/Italy.png" alt="Rome">
-                    <p>Rome, Italty</p>
-                    <p>$5,42k</p>
-                    <img src="./images/icons/send-message-sign.png" alt="Choose sign">
-                    <p>10 Days Trip</p>
+                <div id="destinations-icons">
+                    <div id="Rome">
+                        <div>
+                            <div class="country">
+                                <p>Rome, Italty</p>
+                                <p>$5,42k</p>
+                            </div>
+                            <div class=trip-duration>
+                                <img src="./images/icons/send-message-sign.png" alt="Choose sign">
+                                <p>10 Days Trip</p>
+                            </div>  
+                        </div>
+                    </div>
+                    <div id="London">
+                        <div>
+                            <div class="country">
+                                <p>London, UK</p>
+                                <p>$4.2k</p>
+                            </div>
+                            <div class=trip-duration>
+                                <img src="./images/icons/send-message-sign.png" alt="Choose sign">
+                                <p>12 Days Trip</p>
+                            </div>     
+                        </div>
+                    </div>
+                    <div id="Europe">
+                        <div>
+                            <div class="country">
+                                <p>Full Europe</p>
+                                <p>$15k</p>
+                            </div>
+                            <div class=trip-duration>
+                                <img src="./images/icons/send-message-sign.png" alt="Choose sign">
+                                <p>28 Days Trip</p>
+                            </div>     
+                        </div>
+                    </div>
+            </section>
+
+            <section id="book-trip">
+                <p class="easy-fast">Easy and Fast</p>
+                <h2>Book your next trip in 3 easy steps</h2>
+
+                <div class="booking-steps">
+
+                    <img src="./images/icons/choose-destination.png" alt="Choose Destination">
+                    <img src="./images/icons/make-payment.png" alt="Make Payment">
+                    <img src="./images/icons/reach-airport.png" alt="Reach Airport">
+                    <dl>
+                        <dt>Choose Destination</dt>
+                        <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </dd>
+    
+                        <dt>Make Payment</dt>
+                        <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </dd>
+    
+                        <dt>Reach Airport on Selected Date</dt>
+                        <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </dd>
+                    </dl>
                 </div>
+
                 <div>
-                    <img src="./images/England.jpg" alt="London">
-                    <p>London, UK</p>
-                    <p>$4.2k</p>
-                    <img src="./images/icons/send-message-sign.png" alt="Choose sign">
-                    <p>12 Days Trip</p>
+                    <!-- here must be the right div with details -->
                 </div>
-                <div>
-                    <img src="./images/Europe.png" alt="Full Europe">
-                    <p>Full Europe</p>
-                    <p>$15k</p>
-                    <img src="./images/icons/send-message-sign.png" alt="Choose sign">
-                    <p>28 Days Trip</p>
-                </div>
-                <img src="./images/background/spiral.png" alt="Spiral">
             </section>
             
-        </main>
-        
+            <section id="testimonials">
+                <div class="comments">
+                    <p>Testimonials</p>
+                    <h2>What people say about Us.</h2>
+                </div>
 
-    
+                <div>
+                    <!-- here must be the right div with details -->
+                </div>
+            </section>
 
+            <section id="subscribe-us">
+                <div class="companies">
+                    <img src="./images/axon.png" alt="Axon">
+                    <img src="./images/jetstar.png" alt="Jetstar">
+                    <img src="./images/expedia.png" alt="Expedia">
+                    <img src="./images/qantas.png" alt="Qantas">
+                    <img src="./images/alitalia.png" alt="Alitalia">
+                </div>
 
-
-
-
-    <main>
-
+                <div class="subscribe">
+                    <p>Subscribe to get information, latest news and other interesting offers about Cobham</p>
+                    <input type="email" placeholder="Your email">
+                    <!--add mail icon into placeholder-->
+                    <button>Subscribe</button>
+                </div>
+            </section>
     </main>
     
-    <footer>
+    <footer class="container">
+        <div>
+            <img src="./images/grey-Jadoo.png">
+            <p>Book your trip in minute, get full Control for much longer. </p>
+        </div>
+        <div >
+            <dl class="bottom-info">
+                <dt>Company</dt>
+                <dd>About</dd>
+                <dd>Careers</dd>
+                <dd>Mobile</dd>
+            </dl>
+            <dl class="bottom-info">
+                <dt>Contact</dt>
+                <dd>Help/FAQ</dd>
+                <dd>Press</dd>
+                <dd>Affilates</dd>
+            </dl>
+            <dl class="bottom-info">
+                <dt>More</dt>
+                <dd>Airlinefees</dd>
+                <dd>Airline</dd>
+                <dd>Low fare tips</dd>
+            </dl>
+        </div>
+        <div>
+            <img src="./images/icons/facebook.png" alt="facebook">
+            <img src="./images/icons/instagram.png" alt="instagram">
+            <img src="./images/icons/twitter.png" alt="twitter">
+            <p>Discover our app</p>
+
+            <img src="./images/icons/google-play.png" alt="google play">
+            <img src="./images/icons/apple-store.png" alt="apple store">
+        </div>
 
     </footer>
 </body>

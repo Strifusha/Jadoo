@@ -1,5 +1,20 @@
-#main-heading{
+.header-bg{
+ background-image: url(../images/background/beigeRightCorner.png);
+ background-repeat: no-repeat;
+ background-position: top right;
+}
+
+.top-heading{
+    text-transform: uppercase;
+    color:#DF6951;
+}
+
+.main-heading{
     width: 545px;
+    font-size: 84px;
+    line-height: 89px;
+    letter-spacing: -3.36px;
+    margin: 25px 0 30px 0;
 }
 
 .container {
@@ -7,4 +22,249 @@
     max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
+}
+
+.top-navigation{
+    display: flex;
+    align-items:center;
+    padding: 45px 0 25px 0;
+}
+
+.jadoo{
+    margin-right: 222px;
+}
+
+li {
+    display: inline-flex;
+    padding-right: 65px;
+    font-family: 'Google Sans Regular';
+}
+
+.sing-up{
+    border: 1px solid;
+    border-radius: 5px;
+    margin-right: 50px;
+    background-color: #FFF1DA;
+    padding: 10px 20px;
+}
+
+.select-language{
+    border: none;
+    background-color: #FFF1DA;
+}
+
+.top-container{
+    display: flex;
+    margin-bottom: 105px;
+}
+
+.slogan{
+    margin-top: 110px;
+    width: 545px;
+}
+
+.heading-description{
+ line-height: 30px;
+ margin: 5px 0 35px 0;
+}
+
+.slogan-buttons{
+    display: flex;
+    width: 380px;
+}
+
+.find-more-btn{
+    width: 170px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    background-color: #F1A501;
+    color: #ffffff;
+    box-shadow: 0px 20px 35px 0px rgba(241, 165, 1, 0.15);
+    margin-right: 44px;
+}
+
+.play-demo{
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 17px;
+    color: #686D77;
+    width: 165px;
+    height: 60px;
+    padding: 0;
+    border: none;
+}
+
+.demo-img{
+    margin: 25px 0 0 -26px;
+    width: 60%;
+}
+
+.traveller{
+    width: 765px;
+}
+
+h4{
+    font-family: 'Poppins';
+    font-weight: 700;
+}
+
+#service-icons{
+    margin: 65px 0 155px 0;
+    display: flex;
+    align-items: center;
+}
+
+#service-icons > div{
+    text-align: center;
+    width: 23%;
+    height: 315px;
+    margin: auto;
+    border-radius: 36px;
+    line-height: 26px;
+    padding: 36px 36px 45px 36px;
+}
+
+#service-icons > div > img{
+    display: inline-block;
+    margin-bottom: 20px;
+    height: 75px;
+}
+
+#destinations-icons{
+    display: flex;
+    margin-top: 60px;
+    background-image: url(../images/background/spiral.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+#destinations-icons > div {
+    width: 315px;
+    height: 460px;
+    margin: 32px;
+}
+
+.country{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 22px 25px 18px 20px; 
+}
+
+.trip-duration{
+    display: flex;
+    background-color: white;
+    padding: 0 0 40px 20px;
+    border-radius: 0 0 24px 24px;
+    
+}
+
+#Rome, #London, #Europe {
+    display: flex;
+    flex-direction: column-reverse;
+    box-shadow: 0px 20px 35px 0px rgba(23, 23, 22, 0.15);
+    border-radius: 24px;
+    background-size: cover;
+
+}
+#Rome{
+    background-image: url('../images/Italy.png');
+    
+}
+
+#London{
+    background-image: url('../images/England.png');   
+}
+
+#Europe{
+    background-image: url('../images/Europe.png');
+}
+
+#book-trip{
+padding-top: 185px;
+} 
+
+h5{
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+h1, h2{
+    font-family: 'Volkhov';
+    font-weight: 700;
+    font-size: 50px;
+}
+
+p{
+    font-family: 'Poppins';
+    font-weight: 500;
+    line-height: 26px;
+    color: #5E6282;
+}
+
+.category{
+    font-family: 'Poppins';
+    font-weight: 600;
+    text-align: center;
+    font-size: 18px;
+}
+
+.service-description{
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+
+.top-selling{
+    font-family: 'Poppins';
+    font-weight: 600;
+    text-align: center; 
+
+}
+
+.easy-fast{
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+dt{
+    font-family: 'Poppins';
+    font-weight: 700;
+}
+
+dd{
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+#services > h2{
+    text-align: center; 
+}
+
+#destinations > h2{
+    text-align: center; 
+}
+
+.comments > p{
+    font-family: 'Poppins';
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.subscribe > p{
+    font-weight: 600;
+    font-size: 33px;
+    text-align: center;
+    color: #5E6282;
+}
+
+.bottom-info > dd{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 18px;
 }
