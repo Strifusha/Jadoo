@@ -1,9 +1,5 @@
 @font-face {
-    font-family: 'Google Sans Light';
-    src: url('./google-sans-cufonfonts/ProductSans-Light.ttf') format('truetype'),
-}
-
-@font-face {
-    font-family: 'Google Sans Regular';
-    src: url('./google-sans-cufonfonts/ProductSans-Regular.ttf') format('truetype'),
+    font-family: 'Google Sans';
+    src: url('./google-sans-cufonfonts/ProductSans-Regular.ttf')
+    format('truetype')
 }
