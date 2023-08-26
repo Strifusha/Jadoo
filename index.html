@@ -15,18 +15,17 @@
 
 </head>
 <body>
-    <div class="header-bg">
+    <div id="header-bg">
         
         <header class="container">
             <nav class="top-navigation">
-                <img src="./images/Logo.png" class="jadoo" alt="Jadoo">
-                <ul>
-                    <li>Destinations</li>
-                    <li>Hotels</li>
-                    <li>Flights</li>
-                    <li>Bookings</li>
-                    <li>Login</li>
-                </ul>
+                <a href="#header-bg"><img src="./images/Logo.png" class="jadoo" alt="Jadoo"></a>
+              
+                <a href="#destinations">Destinations</a>
+                <a href="#destinations">Hotels</a>
+                <a href="#further-trips">Flights</a>
+                <a href="#book-trip">Bookings</a>
+                <a href="#subscribe-us">Login</a>
 
                 <button class="sing-up">Sing up</button>
                 <select class="select-language">
@@ -39,9 +38,9 @@
 
         <section class="container top-container">
             <div class="slogan">
-                <h4 class="top-heading">Best Destinations around the world</h4>
-                <h1 class="main-heading">Travel, enjoy and live a new and full life</h1>
-                <p class="heading-description" >Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.</p>
+                <h4>Best Destinations around the world</h4>
+                <h1>Travel, enjoy and live a new and full life</h1>
+                <p>Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.</p>
                 <div class='slogan-buttons'>
                     <button class="find-more-btn">Find out more</button>
                     <button class="play-demo"><img class='demo-img' src="./images/icons/Play-demo.png" /> Play Demo</button>
@@ -57,7 +56,7 @@
 
     <main class="container">
             <section class="services">
-                <p class="category">Category</p>
+                <p>Category</p>
                 <h2>We Offer Best Services</h2>
 
                 <div class="service-items">
@@ -87,10 +86,10 @@
                 </div>
             </section>
 
-            <section class="destinations">
-                <p class="top-selling">Top Selling</p>
+            <section id="destinations">
+                <p>Top Selling</p>
                 <h2>Top Destinations</h2>
-                
+
                 <div class="destinations-items">
 
                     <article id="rome">
@@ -133,32 +132,52 @@
                     </article>
             </section>
 
-            <section class="book-trip">
-                <p class="easy-fast">Easy and Fast</p>
+            <section id="book-trip">
+                <p>Easy and Fast</p>
                 <h2>Book your next trip in 3 easy steps</h2>
 
-                <div class="booking-steps">
+                <article class="booking-steps">
+                    <div class="booking-icons">
+                        <img src="./images/icons/choose-destination.png" alt="Choose Destination">
+                        <img src="./images/icons/make-payment.png" alt="Make Payment">
+                        <img src="./images/icons/reach-airport.png" alt="Reach Airport">
+                    </div>
+                    
+                    <div class="booking-info">
+                        <article>
+                            <p>Choose Destination</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p>
+                        </article>
+                        <article>
+                            <p>Make Payment</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p>    
+                        </article>
+                        <article>
+                        <p>Reach Airport on Selected Date</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p>
+                        </article>
+                    </div>    
+                </article>
 
-                    <img src="./images/icons/choose-destination.png" alt="Choose Destination">
-                    <img src="./images/icons/make-payment.png" alt="Make Payment">
-                    <img src="./images/icons/reach-airport.png" alt="Reach Airport">
-                    <dl>
-                        <dt>Choose Destination</dt>
-                        <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </dd>
-    
-                        <dt>Make Payment</dt>
-                        <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </dd>
-    
-                        <dt>Reach Airport on Selected Date</dt>
-                        <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </dd>
-                    </dl>
-                </div>
+                <article id="further-trips">
+                    <img src="./images/Greece.png" alt="Greece">
+                    <p>Trip To Greece</p>
+                    <p>14-29 June</p>
+                    <div class="trip-details">
+                        <img src="./images/icons/leaf.png" alt="leaf icon">
+                        <img src="./images/icons/map.png" alt="map icon">
+                        <img src="./images/icons/letter.png" alt="letter icon">
+                    </div>
+                    
+                    <img class='building-icon' src="./images/icons/building.png" alt="building icon">
+                    <p>24 people going</p>
+                </article>
             </section>
             
-            <section id="testimonials">
+            <section class="testimonials">
                 <div class="comments">
                     <p>Testimonials</p>
-                    <h2>What people say about Us.</h2>
+                    <h2>What people say about Us</h2>
                 </div>
 
                 <div>
@@ -166,61 +185,73 @@
                 </div>
             </section>
 
+            
+            <section class="companies">
+                <img src="./images/axon.png" alt="Axon">
+                <img src="./images/jetstar.png" alt="Jetstar">
+                <img src="./images/expedia.png" alt="Expedia">
+                <img src="./images/qantas.png" alt="Qantas">
+                <img src="./images/alitalia.png" alt="Alitalia">
+             </section>
+
             <section id="subscribe-us">
-                <div class="companies">
-                    <img src="./images/axon.png" alt="Axon">
-                    <img src="./images/jetstar.png" alt="Jetstar">
-                    <img src="./images/expedia.png" alt="Expedia">
-                    <img src="./images/qantas.png" alt="Qantas">
-                    <img src="./images/alitalia.png" alt="Alitalia">
-                </div>
+                    <p>Subscribe to get information, latest news and other interesting offers about Cobham</p>
 
                 <div class="subscribe">
-                    <p>Subscribe to get information, latest news and other interesting offers about Cobham</p>
-                    <input type="email" placeholder="Your email">
+                    <input class="email" type="email" placeholder="Your email">
                     <!--add mail icon into placeholder-->
-                    <button>Subscribe</button>
+                    <button class="subscribe-btn">Subscribe</button>
                 </div>
             </section>
     </main>
     
-    <footer class="container">
-        <div>
+    <footer class="container footer">
+        <div class="bottom-slogan">
             <img src="./images/grey-Jadoo.png">
             <p>Book your trip in minute, get full Control for much longer. </p>
         </div>
-        <div >
-            <!--horisontal line -->
-            <ul>
-                <li>Company</li>
-                <li>Contact</li>
-                <li>More</li>
-            </ul>
 
-            <ul class="bottom-info">
-                <li>About</li>
-                <li>Careers</li>
-                <li>Mobile</li>
-            </ul>
-            <ul class="bottom-info">
-                <li>Help/FAQ</li>
-                <li>Press</li>
-                <li>Affilates</li>
-            </ul>
-            <ul class="bottom-info">
-                <li>Airlinefees</li>
-                <li>Airline</li>
-                <li>Low fare tips</li>
-            </ul>
+        <div class="bottom-info">
+            <div class="bottom-list">
+                <p>Company</p>
+                <ul>
+                    <li>About</li>
+                    <li>Careers</li>
+                    <li>Mobile</li>
+                </ul>
+            </div>
+            <div class="bottom-list">
+                <p>Contact</p>
+                <ul>
+                    <li>Help/FAQ</li>
+                    <li>Press</li>
+                    <li>Affilates</li>
+                </ul>
+            </div>
+            <div class="bottom-list">
+                <p>More</p>
+                <ul>
+                    <li>Airlinefees</li>
+                    <li>Airline</li>
+                    <li>Low fare tips</li>
+                </ul>
+            </div>  
         </div>
-        <div>
-            <img src="./images/icons/facebook.png" alt="facebook">
-            <img src="./images/icons/instagram.png" alt="instagram">
-            <img src="./images/icons/twitter.png" alt="twitter">
+
+        <div class="our-apps">
+            <div class="app-icons">
+                <img src="./images/icons/facebook.png" alt="facebook">
+                <img src="./images/icons/instagram.png" alt="instagram">
+                <img src="./images/icons/twitter.png" alt="twitter">
+            </div>
+            
             <p>Discover our app</p>
 
-            <img src="./images/icons/google-play.png" alt="google play">
-            <img src="./images/icons/apple-store.png" alt="apple store">
+            <div class="app-icons">
+                <img src="./images/icons/google-play.png" alt="google play">
+                <img src="./images/icons/apple-store.png" alt="apple store">
+            </div>
+            
         </div>
 
     </footer>
