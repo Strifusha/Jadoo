@@ -494,7 +494,6 @@ dd{
 .footer{
     margin-bottom: 200px;
     overflow: auto;
-    padding-left: 70px;
 }
 
 .footer > div{
@@ -518,7 +517,7 @@ dd{
 }
 
 .bottom-info{
-    width: 45%;
+    width: 50%;
 }
 
 .bottom-list{
@@ -529,12 +528,17 @@ dd{
 .bottom-list p{
     padding-top: 5px;
 }
+
 .bottom-list li{
     font-family: 'Poppins';
     font-weight: 500;
     font-size: 18px;
     line-height: 35px;
     color:  #5E6282;
+}
+
+.bottom-list a{
+    text-decoration: none;
 }
 
 .bottom-list:last-child{
