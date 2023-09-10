@@ -28,7 +28,7 @@
 .top-navigation{
     display: flex;
     align-items:center;
-    padding: 45px 0 25px 0;
+    padding: 25px 0 25px 0;
 }
 
 .jadoo{
@@ -37,9 +37,10 @@
 
 .top-navigation a {
     color: #212832;
-    padding-right: 65px;
+    /* padding-right: 65px; */
     font-family: 'Google Sans';
     text-decoration: none;
+    padding: 20px 30px;
 }
 
 .sing-up{
@@ -129,18 +130,21 @@ h4{
     font-weight: 700;
 }
 
-.services{
-    overflow: auto;
-    clear: both;
-    background-image: url(../images/background/pluses.png);
+main{
+    background-image: url(../images/background/pluses.png), url(../images/icons/bottom-plus.png);
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: top right, bottom right;
 }
 
-.services p{
+#services{
+    overflow: auto;
+    clear: both;
+}
+
+#services p{
     margin-bottom: 10px;
 }
-.services h2{
+#services h2{
     text-align: center; 
     margin-bottom: 65px;
     font-family: 'Volkhov';
@@ -148,28 +152,51 @@ h4{
     font-size: 50px;
 }
 
+.service-items {
+    overflow: auto;
+    padding: 0 10px 150px 40px;
+}
+
 .service-items article{
     float: left;
+    position: relative;
     width: 25%;
     max-width: 265px;
     text-align: center;
     border-radius: 36px;
     line-height: 26px;
-    padding: 45px;
-    margin:0 35px 155px 0;
+    padding: 45px 50px;
+    margin-right:10px;
 }
 
 .service-items article:last-child{
     margin-right: 0;
 }
 
+
+.service-items article::before{
+    content: url(../images/background/service-bg.png);
+    position: absolute;
+    left: -40px;
+    bottom: -40px;
+    opacity: 0;
+}
+
+
+.service-items article:hover::before{
+    z-index: -1;
+    opacity: 1;
+}
+
 .service-items article:hover{
-    box-shadow: 0px 20px 35px 0px rgba(23, 23, 22, 0.15);
+    background-color:#fff;
+    box-shadow: 0px 10px 15px 0px rgba(99, 99, 96, 0.15);
 }
 
 .service-items article img{
     margin: auto;
 }
+
 .service-items article h5{
     font-family: 'Open Sans';
     font-weight: 600;
@@ -198,7 +225,7 @@ h4{
     background-image: url(../images/background/spiral.png);
     background-repeat: no-repeat;
     background-position: right;
-    padding-bottom: 50px;
+    padding: 0 0 50px 5px;
 }
 
 #destinations h2{
@@ -212,13 +239,9 @@ h4{
 .destinations-items article {
     float: left;
     width: 30%;
-    box-shadow: -1px 10px 30px rgb(235, 235, 235);
+    box-shadow: 0 10px 10px rgb(235, 235, 235);
     border-radius: 24px;
     background-size: cover;
-}
-
-.destinations-items article:first-child{
-    margin-left: 5px;
 }
 
 .destinations-items article > div {
@@ -282,14 +305,7 @@ h1, h2{
     font-size: 50px;
 }
 
-/* p{
-    font-family: 'Poppins';
-    font-weight: 500;
-    line-height: 26px;
-    color: #5E6282;
-} */
-
-.services > p {
+#services > p {
     font-family: 'Poppins';
     font-weight: 600;
     text-align: center;
@@ -301,13 +317,14 @@ h1, h2{
 .service-description{
     font-family: 'Poppins';
     font-weight: 500;
+    color: #5E6282;
 }
 
 #book-trip{
     background-image: url(../images/background/blue-shadow.png);
+    background-size: 550px;
     background-repeat:no-repeat;
-    background-position: top right;
-    /* background-size:contain; */
+    background-position: 640px -40px;
     clear: both;
     overflow: auto;
     padding-bottom: 200px;
@@ -334,15 +351,26 @@ h1, h2{
 #book-trip article{
     float: left;
 }
+
 .booking-steps{
     width: 50%;
 }
 
-.booking-icons{
-    float: left;
+.booking-step{
+    font-family: 'Poppins';
+    font-weight: 700;
+    line-height: 20px;
+    color: #5E6282;
+    margin-top: 0;
 }
-.booking-icons img{
-    padding: 10px 20px 55px 0 ;
+
+.booking-icon{
+    float: left;
+    margin: 5px 20px 0 0;
+}
+
+.booking-info{
+    overflow: auto;
 }
 
 .booking-info article{
@@ -350,17 +378,10 @@ h1, h2{
     padding-bottom: 40px;
 }
 
-.booking-info article p{
+.step-description{
     margin-top: 0;
     font-family: 'Poppins';
     font-weight: 400;
-    line-height: 20px;
-    color: #5E6282;
-}
-
-.booking-info article p:first-child{
-    font-family: 'Poppins';
-    font-weight: 700;
     line-height: 20px;
     color: #5E6282;
 }
@@ -449,15 +470,22 @@ dd{
 }
 
 #subscribe-us{
+    background-image: url(../images/background/right-circle.png), url(../images/background/left-circle.png) ;
+    background-repeat: no-repeat;
+    background-position: top right, bottom left;
     clear:both;
     padding: 80px 155px;
-    background-color: #DFD7F9;
-    /* opacity: 0.2; */
+    background-color: rgb(223, 215, 249, 0.2);
     border-radius: 130px 20px 20px 20px;
     margin-bottom: 190px;
-
 }
 
+.viber{
+    position: relative;
+    top: -95px;
+    right: -960px;
+
+}
 #subscribe-us p{
     font-weight: 600;
     font-size: 33px;
@@ -472,6 +500,9 @@ dd{
 }
 
 .email{
+    background-image: url(../images/icons/email.png);
+    background-repeat: no-repeat;
+    background-position: 25px;
     height: 65px;
     width: 420px;
     border: none;
@@ -481,8 +512,21 @@ dd{
     font-size: 17px;
     padding: 25px 30px;
 }
+
+.email:hover{
+    background: #fff;
+}
+
+.email::placeholder{
+    text-align: right;
+    margin-right: 250px;
+    font-family: 'Poppins';
+    font-size: 14px;
+    color: #39425D;
+}
+
 .subscribe-btn{
-    background-color: #ff946D;
+    background: var(--gradient, linear-gradient(180deg, #FF946D 0%, #FF7D68 100%));
     color: white;
     border: none;
     border-radius: 10px;
@@ -491,12 +535,16 @@ dd{
     font-size: 17px;
 }
 
+.subscribe-btn:hover{
+    cursor:pointer;
+}
+
 .footer{
-    margin-bottom: 200px;
+    margin-bottom: 50px;
     overflow: auto;
 }
 
-.footer > div{
+.bottom{
     float: left;
 }
 .bottom-slogan{
@@ -568,11 +616,27 @@ dd{
 }
 
 .app-icons{
-    text-align: center;
     overflow: auto;
 }
 
 .app-icons img{
     float: left;
-    margin-right: 5px;
+    margin-right: 7px;
+}
+
+.instagram{
+    margin-top: 8px;
+    border-radius: 50%;
+    padding: 6px 5px 5px 6px;
+    box-shadow: 0 0 8px rgb(236, 232, 232);
+}
+
+.bottom-email{
+    clear:both;
+    text-align: center;
+    padding-top: 80px;
+    font-family: "Poppins";
+    font-size: 14px;
+    line-height: 17px;
+    color: #5E6282;
 }
